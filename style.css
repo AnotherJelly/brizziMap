@@ -1,0 +1,102 @@
+.main-map {
+
+}
+.map-button-default {
+    width: 15px;
+    height: 15px;
+    border: 3px solid lightgoldenrodyellow;
+    border-radius: 50%;
+    background-color: wheat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 391;
+}
+.map-tooltip-default {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.map-button-default:hover .map-tooltip-default, .map-button-default:focus .map-tooltip-default {
+    display: block;
+}
+.map-button-default:hover, .map-button-default:focus {
+    z-index: 392;;
+}
+.map-tooltip-default-block {
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border: 2px solid #69102f;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+.map-tooltip-default-title {
+    font-weight: 600;
+}
+.map-tooltip-default-text {
+    cursor: pointer;
+}
+.map-tooltip-default.block {
+    display: block;
+}
+.block-radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.block-radio__button {
+    padding: 10px;
+    border: 2px solid #69102f;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+.block-radio__button:hover {
+    background-color: #69102f;
+    color: #fff;
+}
+.partners-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 40px 0px;
+    line-height: 1;
+}
+.partners-town {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.partners-market-name {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.partners-market-address, .partners-market-phone, .partners-market-site, .partners-market-email {
+    font-size: 16px;
+    font-weight: 200;
+}
+.partners-block-town {
+    margin: 20px 0;
+}
+.partners-market {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px 0;
+}
+@media all and (max-width: 768px) {
+    .partners-market {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+}
